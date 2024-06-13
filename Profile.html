@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Buyer Notification</title>
+    <title>Profile</title>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -85,18 +85,33 @@
               name="arrow-back-outline"
             ></ion-icon></a>
             <p class="font-semibold font-sans text-[18px] text-[#0068CE]">
-              Notifications
+              Profile
             </p>
           </div>
           <img class="mr-12" src="Asset/component2.png" alt="" />
         </div>
 
         <div
-          class="bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] w-[73vw] h-[160px] rounded-md"
-        ></div>
+          class="bg-[#FFFFFF]  text-[#0068CE] pt-[40px] shadow-2xl shadow-[#6FA5F726] w-[73vw] h-[160px] rounded-md flex justify-between"
+        >
+
+        <div class=" flex ml-[40px] " >
+            <img class="w-20 h-20" src="Asset/component7.png" alt="" />
+             <div class="ml-[20px]">
+            <p>Ejike Ebuta</p>
+            <p>07035468988</p>
+            <p>ejikeebuta@gmail.com</p>
+        </div>
+        </div>
+        <ion-icon
+                  class="text-[#DDDDDD] w-[30px] h-[30px] mt-4"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+          </div>
+          <p class="mt-8 ml-8 text-[#0068CE] text-[20px] font-bold">Saved Locations</p>
 
         <div
-          class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] mt-4 w-[73vw] h-[160px] rounded-md"
+          class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] mt-2 w-[73vw] h-[320px] rounded-md"
         ></div>
       </div>
 
@@ -104,3 +119,5 @@
     </div>
   </body>
 </html>
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
