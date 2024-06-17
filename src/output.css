@@ -615,6 +615,10 @@ video {
   margin-left: 1rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -641,6 +645,10 @@ video {
 
 .ml-\[20px\] {
   margin-left: 20px;
+}
+
+.ml-\[250px\] {
+  margin-left: 250px;
 }
 
 .ml-\[280px\] {
@@ -707,6 +715,10 @@ video {
   margin-top: 100px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
 .mt-\[35px\] {
   margin-top: 35px;
 }
@@ -723,32 +735,16 @@ video {
   margin-top: 70px;
 }
 
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[550px\] {
-  margin-left: 550px;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
+.mt-\[10px\] {
+  margin-top: 10px;
 }
 
 .ml-\[200px\] {
   margin-left: 200px;
 }
 
-.ml-\[250px\] {
-  margin-left: 250px;
-}
-
-.mt-\[10px\] {
-  margin-top: 10px;
+.ml-\[300px\] {
+  margin-left: 300px;
 }
 
 .flex {
@@ -857,6 +853,10 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .w-0 {
@@ -973,6 +973,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .justify-between {
@@ -1142,12 +1146,20 @@ video {
   padding-left: 20px;
 }
 
+.pl-\[230px\] {
+  padding-left: 230px;
+}
+
 .pl-\[350px\] {
   padding-left: 350px;
 }
 
 .pl-\[40px\] {
   padding-left: 40px;
+}
+
+.pl-\[50px\] {
+  padding-left: 50px;
 }
 
 .pt-1 {
@@ -1180,26 +1192,6 @@ video {
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pl-\[550px\] {
-  padding-left: 550px;
-}
-
-.pl-\[150px\] {
-  padding-left: 150px;
-}
-
-.pl-\[200px\] {
-  padding-left: 200px;
-}
-
-.pl-\[230px\] {
-  padding-left: 230px;
-}
-
-.pl-\[50px\] {
-  padding-left: 50px;
 }
 
 .text-center {
@@ -1318,11 +1310,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1404,10 +1391,6 @@ video {
 
   .lg\:w-\[40vw\] {
     width: 40vw;
-  }
-
-  .lg\:w-\[200px\] {
-    width: 200px;
   }
 
   .lg\:px-20 {
