@@ -18,24 +18,25 @@
   <body class="bg-[#F0FAFF]">
     <div class="lg:flex">
       <!-- sidebar begins -->
+      <!-- sidebar begins -->
       <div
-        class="w-[50vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12"
+        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 hidden lg:block"
       >
         <!-- logo -->
         <div
-          class="bg-[#FFFFFF] w-[15vw] h-[50px] py-2 px-12 rounded-br-[30px] rounded-tr-[30px]"
+          class="bg-[#FFFFFF] w-[60vw] lg:w-[15vw] h-[50px] py-2 px-8 lg:px-12 rounded-br-[30px] rounded-tr-[30px]"
         >
           <img src="Asset/logo.png" alt="" />
         </div>
         <!-- logo ends -->
         <!-- img1 begis -->
-        <div class="mx-14 my-6 w-[15vw]">
+        <div class="mx-14 my-6 w-[30vw] lg:w-[15vw]">
           <img class="w-20 h-20" src="Asset/component7.png" alt="" />
         </div>
         <!-- img1 ends -->
         <!-- paragraps begins -->
         <div
-          class="w-[15vw] pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
+          class="lg:w-[15vw] pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
         >
           <div class="flex my-4">
             <a href="request.html"> <p>Request History</p></a>
@@ -70,16 +71,17 @@
         <!-- paragraph ends -->
         <button
           type="button"
-          class="bg-[#0091FF] text-[#FFFFFF] my-10 mx-8 w-[15vw] h-[40px] rounded-3xl font-sans font-medium"
+          class="bg-[#0091FF] text-[#FFFFFF] my-10 mx-8 w-[40vw] lg:w-[15vw] h-[40px] rounded-3xl font-sans font-medium"
         >
           Become a Vendor
         </button>
       </div>
+
       <!-- sidebar ends -->
       <!-- Notifications begins -->
       <div class="w-[80vw] h-[150px] mx-4">
         <div class="flex justify-between py-6">
-          <div class="ml-12 flex">
+          <div class="ml-6 lg:ml-12 flex">
             <a href="About.html">
               <ion-icon
                 class="mt-1 mr-2 w-5 h-5"
@@ -90,13 +92,13 @@
               Profile
             </p>
           </div>
-          <img class="mr-12" src="Asset/component2.png" alt="" />
+          <img class="lg:mr-12" src="Asset/component2.png" alt="" />
         </div>
 
         <div
-          class="bg-[#FFFFFF] text-[#0068CE] pt-[40px] shadow-2xl shadow-[#6FA5F726] w-[73vw] h-[160px] rounded-md flex justify-between"
+          class="bg-[#FFFFFF] text-[#0068CE] pt-[40px] shadow-2xl shadow-[#6FA5F726] w-[90vw] lg:w-[73vw] h-[160px] rounded-md flex justify-between"
         >
-          <div class="flex ml-[40px]">
+          <div class="flex ml-1 lg:ml-[40px]">
             <img class="w-20 h-20" src="Asset/component7.png" alt="" />
             <div class="ml-[20px]">
               <p>Ejike Ebuta</p>
@@ -104,72 +106,72 @@
               <p>ejikeebuta@gmail.com</p>
             </div>
           </div>
-          <a href="Editprofile.html"><ion-icon
-            class="text-[#0068CE] font-bold w-[30px] h-[30px] mt-4 mr-4"
-            name="chevron-forward-outline"
-          ></ion-icon></a>
+          <a href="Editprofile.html"
+            ><ion-icon
+              class="text-[#0068CE] font-bold w-[30px] h-[30px] mt-4 mr-4"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></a>
         </div>
-        <p class="mt-8 ml-8 text-[#0068CE] text-[20px] font-bold">
+        <p class="mt-8 ml-4 lg:ml-8 text-[#0068CE] text-[20px] font-bold">
           Saved Locations
         </p>
 
         <div
-          class="font-sans bg-[#FFFFFF] pt-8 shadow-2xl shadow-[#6FA5F726] mt-2 w-[73vw] h-[320px] rounded-md "
+          class="font-sans bg-[#FFFFFF] pt-8 shadow-2xl shadow-[#6FA5F726] mt-2 w-[90vw] lg:w-[73vw] h-[320px] rounded-md"
         >
-        <div class="flex justify-between" >
-          <div class="flex text-[#0068CE] ml-4">
-            <ion-icon
-              name="location-outline"
-              class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
-            ></ion-icon>
-            <div class="ml-2">
-              <p class="font-bold">Home</p>
-              <p>5, Dayo Alieu Str</p>
+          <div class="flex justify-between">
+            <div class="flex text-[#0068CE] ml-4">
+              <ion-icon
+                name="location-outline"
+                class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
+              ></ion-icon>
+              <div class="ml-2">
+                <p class="font-bold">Home</p>
+                <p>5, Dayo Alieu Str</p>
+              </div>
             </div>
-          </div>
-          <ion-icon
-            class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
-            name="chevron-forward-outline"
-          ></ion-icon>
-        </div>
-        <div class="flex justify-between mt-8" >
-          <div class="flex text-[#0068CE] ml-4">
             <ion-icon
-              name="location-outline"
-              class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
+              class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
+              name="chevron-forward-outline"
             ></ion-icon>
-            <div class="ml-2">
-              <p class="font-bold">Work</p>
-              <p>Chariot HQ</p>
-            </div>
           </div>
-          <ion-icon
-            class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
-            name="chevron-forward-outline"
-          ></ion-icon>
-        </div>
-        <div class="flex justify-between mt-8" >
-          <div class="flex text-[#0068CE] ml-4">
+          <div class="flex justify-between mt-8">
+            <div class="flex text-[#0068CE] ml-4">
+              <ion-icon
+                name="location-outline"
+                class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
+              ></ion-icon>
+              <div class="ml-2">
+                <p class="font-bold">Work</p>
+                <p>Chariot HQ</p>
+              </div>
+            </div>
             <ion-icon
-              name="location-outline"
-              class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
+              class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
+              name="chevron-forward-outline"
             ></ion-icon>
-            <div class="ml-2">
-              <p class="font-bold">Business Store</p>
-              <p>23 Isaac John Str, Ikeja</p>
-            </div>
           </div>
-          <ion-icon
-            class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
-            name="chevron-forward-outline"
-          ></ion-icon>
+          <div class="flex justify-between mt-8">
+            <div class="flex text-[#0068CE] ml-4">
+              <ion-icon
+                name="location-outline"
+                class="mt-1 text-[#4CFFFE] font-[700] w-5 h-5"
+              ></ion-icon>
+              <div class="ml-2">
+                <p class="font-bold">Business Store</p>
+                <p>23 Isaac John Str, Ikeja</p>
+              </div>
+            </div>
+            <ion-icon
+              class="text-[#DDDDDD] w-[30px] h-[30px] mr-4"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </div>
         </div>
-        </div>
-        
       </div>
 
       <!-- Notification ends -->
     </div>
   </body>
 </html>
-

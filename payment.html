@@ -19,23 +19,23 @@
     <div class="lg:flex w-[full]">
       <!-- sidebar begins -->
       <div
-        class="w-[50vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[70px] pt-12"
+        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 hidden lg:block"
       >
         <!-- logo -->
         <div
-          class="bg-[#FFFFFF] w-[15vw] h-[50px] py-2 px-12 rounded-br-[30px] rounded-tr-[30px]"
+          class="bg-[#FFFFFF] w-[60vw] lg:w-[15vw] h-[50px] py-2 px-8 lg:px-12 rounded-br-[30px] rounded-tr-[30px]"
         >
           <img src="Asset/logo.png" alt="" />
         </div>
         <!-- logo ends -->
         <!-- img1 begis -->
-        <div class="mx-14 my-6 w-[15vw]">
+        <div class="mx-14 my-6 w-[30vw] lg:w-[15vw]">
           <img class="w-20 h-20" src="Asset/component7.png" alt="" />
         </div>
         <!-- img1 ends -->
         <!-- paragraps begins -->
         <div
-          class="w-[15vw] pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
+          class="lg:w-[15vw] pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
         >
           <div class="flex my-4">
             <a href="request.html"> <p>Request History</p></a>
@@ -70,16 +70,17 @@
         <!-- paragraph ends -->
         <button
           type="button"
-          class="bg-[#0091FF] text-[#FFFFFF] my-10 mx-8 w-[15vw] h-[40px] rounded-3xl font-sans font-medium"
+          class="bg-[#0091FF] text-[#FFFFFF] my-10 mx-8 w-[40vw] lg:w-[15vw] h-[40px] rounded-3xl font-sans font-medium"
         >
           Become a Vendor
         </button>
       </div>
+
       <!-- sidebar ends -->
       <!-- nav -->
       <div class="w-[80vw]">
         <div class="flex justify-between py-6">
-          <div class="ml-12 flex">
+          <div class=" ml-6 lg:ml-12 flex">
             <a href="About.html">
               <ion-icon
                 class="mt-1 mr-2 w-5 h-5"
@@ -90,14 +91,14 @@
               Payment
             </p>
           </div>
-          <img class="mr-12" src="Asset/component2.png" alt="" />
+          <img class="lg:mr-12" src="Asset/component2.png" alt="" />
         </div>
         <!-- nav -->
         <div>
-          <div class="flex justify-evenly">
+          <div class="lg:flex lg:justify-evenly">
             <!-- red div -->
             <div>
-              <div
+              <div 
                 class=""
                 style="
                   background-image: url(Asset/bg\ image.png);
@@ -106,6 +107,7 @@
 
                   padding-left: 60px;
                 "
+                @media 
               >
                 <p
                   class="pt-[80px] text-[#0036B2] text-[16px] font-medium font-sans"
@@ -146,27 +148,28 @@
             </div>
             <!-- red div -->
             <div class="mt-[70px]">
-             <a href="cards.html"> <div
-                class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] mt-2 w-[30vw] h-[60px] rounded-3xl py-4 px-6 flex justify-between"
-              >
-                <div class="flex">
-                  <img
-                    class="w-[33px] h-[20px] mt-2"
-                    src="Asset/component4.png"
-                    alt=""
-                  />
+              <a href="cards.html">
+                <div
+                  class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] mt-2 w-[30vw] h-[60px] rounded-3xl py-4 px-6 flex justify-between"
+                >
+                  <div class="flex">
+                    <img
+                      class="w-[33px] h-[20px] mt-2"
+                      src="Asset/component4.png"
+                      alt=""
+                    />
 
-                  <p class="text-[18px] text-[#0068CE] font-bold mt-1 ml-2">
-                    ...1234
-                  </p>
+                    <p class="text-[18px] text-[#0068CE] font-bold mt-1 ml-2">
+                      ...1234
+                    </p>
+                  </div>
+
+                  <ion-icon
+                    class="text-[#DDDDDD] w-[30px] h-[30px]"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
                 </div>
-
-                <ion-icon
-                  class="text-[#DDDDDD] w-[30px] h-[30px]"
-                  name="chevron-forward-outline"
-                ></ion-icon>
-              </div>
-            </a>
+              </a>
               <div
                 class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] mt-12 w-[30vw] h-[60px] rounded-3xl py-4 px-6 flex justify-between"
               >
@@ -193,12 +196,13 @@
                   alt=""
                   class="w-[12px] h-[12px] mt-2"
                 />
-                <a href="addcard.html"><p
-                  class="text-[#0036B2] ml-2 text-[16px] font-medium font-sans"
-                >
-                  Add Card
-                </p>
-              </a>
+                <a href="addcard.html"
+                  ><p
+                    class="text-[#0036B2] ml-2 text-[16px] font-medium font-sans"
+                  >
+                    Add Card
+                  </p>
+                </a>
               </div>
             </div>
           </div>
