@@ -19,7 +19,7 @@
     <div class="lg:flex">
       <!-- sidebar begins -->
       <div
-        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 block"
+        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 hidden lg:block"
       >
         <!-- logo -->
         <div
@@ -80,7 +80,7 @@
       <!-- Notifications begins -->
       <div class="w-[80vw] h-[150px] mx-4">
         <div class="flex justify-between py-6">
-          <div class="ml-12 flex">
+          <div class="lg:ml-12 flex">
             <a href="tankcrequest.html">
               <ion-icon
                 class="mt-1 mr-2 w-5 h-5"
@@ -91,48 +91,55 @@
               Buy Water
             </p>
           </div>
-          <img class="mr-12" src="Asset/component2.png" alt="" />
+          <img class="lg:mr-12" src="Asset/component2.png" alt="" />
         </div>
         <div
-          class="bg-[#FFFFFF] text-[#0068CE] pt-[20px] shadow-2xl shadow-[#6FA5F726] w-[73vw] h-[200px] rounded-md flex justify-between"
+          class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] w-[85vw] lg:w-[73vw] h-[140px] rounded-md py-2 flex justify-between"
         >
-          <div class="flex ml-[20px]">
+          <div class="flex">
             <img
+              class="w-[120px] lg:w-[150px] h-[160px] lg:h-[180px] mt-[-15px] lg:mt-[-20px] ml-[-10px]"
               src="Asset/tanker.png"
               alt=""
-              class="w-[150px] lg:w-[300px] lg:h-[280px] h-[107px] ml-[-62px] mt-[-50px]"
             />
-            <div class="ml-[-20px] text-[20px] font-bold font-sans">
-              <p>TANK WATER</p>
-              <p class="text-[#DDDDDD]">12 Steph tills Close VI</p>
-              <p class="text-[#DDDDDD]">Home/ Domestic Use</p>
-              <p class="text-[#DDDDDD]">4 Tanks</p>
-              <p class="text-[#0068CE]">N 30,750.00</p>
+            <div class="mt-2">
+              <p class="text-[18px] text-[#0068CE] font-bold">TANK WATER</p>
+              <p class="text-[#545454] text-[14px] font-semibold">
+                12 Steph tills Close,VI
+              </p>
+              <p class="text-[#545454] text-[14px] font-semibold">
+                Home/ Domestic Use
+              </p>
+              <p class="text-[#545454] text-[14px] font-semibold">4 Tanks</p>
+              <p class="text-[14px] text-[#0068CE] font-bold">N 30,750.00</p>
             </div>
           </div>
-          <a href=""
-            ><ion-icon
-              class="bg-[#DDDDDD] text-[#0068CE] font-bold w-[30px] h-[30px] mt-12 mr-4"
+          <div class="bg-[#4CFFFE] mr-2 lg:mr-0 w-5 h-6 mt-[40px]">
+            <ion-icon
+              class="text-[#084F95]"
               name="chevron-forward-outline"
-            ></ion-icon
-          ></a>
+            ></ion-icon>
+          </div>
         </div>
 
-        <div class="w-[50vw] ml-[400px] mt-[150px]">
-          <img class="w-[100px] h-[100px]" src="Asset/component2.png" alt="" />
-          <p class="text-[#0068CE] font-medium font-sans mt-2 ml-4">
+        <div class="w-[50vw] ml-[90px] lg:ml-[400px] mt-[200px] ">
+          <img
+            class="w-[20vw] lg:w-[100px] h-[80px] lg:h-[100px] ml-8 lg:ml-0"
+            src="Asset/component2.png"
+            alt=""
+          />
+          <p class="text-[#0068CE] font-medium font-sans mt-2 ml-8 lg:ml-4">
             Searching...
           </p>
-          <a href="tankcancel.html">
-            <div
-              class="w-[20vw] h-[40px] font-sans font-medium bg-black pt-2 pl-[70px] text-white mt-2 ml-[-80px] rounded-[20px]"
+          <a href="tankcancel.html"
+            ><div
+              class="w-[60vw] lg:w-[20vw] h-[40px] font-sans font-medium bg-black pt-2 pl-[50px] lg:pl-[70px] text-white mt-2 ml-[-45px] lg:ml-[-80px] rounded-[20px]"
             >
               Cancel Request
-            </div></a
-          >
+            </div>
+          </a>
         </div>
       </div>
-
       <!-- Notification ends -->
     </div>
   </body>

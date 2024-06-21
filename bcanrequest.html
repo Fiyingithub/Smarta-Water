@@ -20,7 +20,7 @@
       <!-- sidebar begins -->
 
       <div
-        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 block"
+        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 hidden lg:block"
       >
         <!-- logo -->
         <div
@@ -76,12 +76,11 @@
           Become a Vendor
         </button>
       </div>
-
       <!-- sidebar ends -->
       <!-- Notifications begins -->
       <div class="w-[80vw] h-[150px] mx-4">
         <div class="flex justify-between py-6">
-          <div class="ml-12 flex">
+          <div class="lg:ml-12 flex">
             <a href="bcrequest.html">
               <ion-icon
                 class="mt-1 mr-2 w-5 h-5"
@@ -92,10 +91,10 @@
               Buy Water
             </p>
           </div>
-          <img class="mr-12" src="Asset/component2.png" alt="" />
+          <img class="lg:mr-12" src="Asset/component2.png" alt="" />
         </div>
         <div
-          class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] w-[73vw] h-auto rounded-md py-4 px-6 flex justify-between"
+          class="font-sans bg-[#FFFFFF] shadow-2xl shadow-[#6FA5F726] w-[85vw] lg:w-[73vw] h-auto rounded-md py-4 lg:px-6 flex justify-between"
         >
           <div class="flex">
             <img
@@ -114,25 +113,28 @@
               <p class="text-[14px] text-[#0068CE] font-bold">N 7,890.00</p>
             </div>
           </div>
-          <div class="bg-[#4CFFFE] w-5 h-6 mt-[40px]">
+          <div class="bg-[#4CFFFE] mr-2 lg:mr-0 w-5 h-6 mt-[40px]">
             <ion-icon
               class="text-[#084F95]"
               name="chevron-forward-outline"
             ></ion-icon>
           </div>
         </div>
-        <div class="w-[50vw] ml-[400px] mt-[200px]">
-          <img class="w-[100px] h-[100px]" src="Asset/component2.png" alt="" />
-          <p class="text-[#0068CE] font-medium font-sans mt-2 ml-4">
+        <div class="w-[50vw] ml-[90px] lg:ml-[400px] mt-[200px] ">
+          <img
+            class="w-[20vw] lg:w-[100px] h-[80px] lg:h-[100px] ml-8 lg:ml-0"
+            src="Asset/component2.png"
+            alt=""
+          />
+          <p class="text-[#0068CE] font-medium font-sans mt-2 ml-8 lg:ml-4">
             Searching...
           </p>
-          <a href="bcancel.html"
-            ><div
-              class="w-[20vw] h-[40px] font-sans font-medium bg-black pt-2 pl-[70px] text-white mt-2 ml-[-80px] rounded-[20px]"
-            >
-              Cancel Request
-            </div></a
+         <a href="bcancel.html"> <div
+            class="w-[60vw] lg:w-[20vw] h-[40px] font-sans font-medium bg-black pt-2 pl-[50px] lg:pl-[70px] text-white mt-2 ml-[-45px] lg:ml-[-80px] rounded-[20px]"
           >
+            Cancel Request
+          </div>
+        </a>
         </div>
       </div>
 
