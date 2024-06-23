@@ -19,23 +19,30 @@
     <div class="block lg:flex">
       <!-- sidebar begins -->
       <div
-        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-12 hidden  lg:block"
+        class="w-[70vw] lg:w-[20vw] lg:h-auto bg-[#4CFFFE] rounded-br-[100px] pt-2 lg:pt-12 hidden lg:block absolute lg:relative  "
+        id="sidebar"
       >
+        <ion-icon
+          name="close-circle-outline"
+          class="ml-[220px] w-6 h-6 lg:hidden"
+          id="cancel"
+        ></ion-icon>
+
         <!-- logo -->
         <div
-          class="bg-[#FFFFFF] w-[60vw] lg:w-[15vw] h-[50px] py-2 px-8 lg:px-12 rounded-br-[30px] rounded-tr-[30px]"
+          class="bg-[#FFFFFF] w-[60vw] lg:w-[15vw] h-[50px] py-2 px-8 lg:px-12 rounded-br-[30px] rounded-tr-[30px] absolute lg:relative z-10 "
         >
           <img src="Asset/logo.png" alt="" />
         </div>
         <!-- logo ends -->
         <!-- img1 begis -->
-        <div class="mx-14 my-6 w-[30vw] lg:w-[15vw]">
+        <div class=" mx-[80px] lg:mx-14 my-[80px] lg:my-6 w-[30vw] lg:w-[15vw]">
           <img class="w-20 h-20" src="Asset/component7.png" alt="" />
         </div>
         <!-- img1 ends -->
         <!-- paragraps begins -->
         <div
-          class="lg:w-[15vw] pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
+          class="lg:w-[15vw] mt-[-40px] lg:mt-0 pl-12 font-sans text-[#1F1F1F] text-[18px] font-semibold"
         >
           <div class="flex my-4">
             <a href="request.html"> <p>Request History</p></a>
@@ -79,7 +86,15 @@
       <!-- Notifications begins -->
       <div class="w-[80vw] h-[150px] mx-4">
         <div class="flex justify-between py-6">
-          <div class=" ml-6 lg:ml-12 bg-white py-2 pl-2 rounded-[30px]">
+          <div class="ml-[120px] hidden lg:block">
+            <p class="font-semibold font-sans text-[18px] text-[#0068CE]">
+              About Us
+            </p>
+          </div>
+          <div
+            class="ml-6 lg:ml-12 bg-white py-2 pl-2 rounded-[30px] block lg:hidden"
+            id="menu"
+          >
             <!-- <ion-icon
               class="mt-1 mr-2 w-5 h-5"
               name="arrow-back-outline"
@@ -109,7 +124,7 @@
         </div>
 
         <div
-          class="font-sans lg:mt-4  w-[80vw] lg:w-[73vw] h-[220px] rounded-md block lg:flex ml-4 lg:ml-0"
+          class="font-sans lg:mt-4 w-[80vw] lg:w-[73vw] h-[220px] rounded-md block lg:flex ml-4 lg:ml-0"
         >
           <div class="flex lg:justify-evenly">
             <a href="sachetpayment.html">
@@ -126,7 +141,7 @@
                 class="lg:w-[250px] lg:h-[300px] w-[40vw] h-[176px]"
             /></a>
           </div>
-          <div class="flex justify-evenly ml-[10px] lg:ml-0  mt-[-30px] lg:mt-0">
+          <div class="flex justify-evenly ml-[10px] lg:ml-0 mt-[-30px] lg:mt-0">
             <div
               class="bg-white h-[125px] lg:h-[210px] w-[30vw] lg:w-[172px] rounded-[5px] pt-[20px] lg:pt-[40px] pl-[10px] lg:pl-[40px] mt-[20px] lg:mt-[35px]"
             >
@@ -146,7 +161,7 @@
           </div>
         </div>
         <div
-          class="font-sans bg-[#FFFFFF] lg:ml-[40px] shadow-2xl shadow-[#6FA5F726] mt-[100px] lg:mt-[40px] w-[75vw] lg:w-[63vw] h-[60px] rounded-3xl py-4 pl-[70px] lg:pl-[350px] ml-4 "
+          class="font-sans bg-[#FFFFFF] lg:ml-[40px] shadow-2xl shadow-[#6FA5F726] mt-[100px] lg:mt-[40px] w-[75vw] lg:w-[63vw] h-[60px] rounded-3xl py-4 pl-[70px] lg:pl-[350px] ml-4"
         >
           <div class="flex">
             <img
@@ -163,7 +178,7 @@
           </div>
         </div>
         <div
-          class="w-[300px] lg:w-[380px] lg:mx-[250px] h-[28px] text-center py-2  px-4 font-sans ml-4  "
+          class="w-[300px] lg:w-[380px] lg:mx-[250px] h-[28px] text-center py-2 px-4 font-sans ml-4"
         >
           <p>
             Your card details are save with us and you won't be charged until
@@ -174,5 +189,17 @@
 
       <!-- Notification ends -->
     </div>
+    <script>
+      let menu = document.getElementById("menu");
+      menu.addEventListener("click", function () {
+        let sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("hidden");
+      });
+      let cancel = document.getElementById("cancel");
+      cancel.addEventListener("click", function () {
+        let sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
